@@ -1,14 +1,12 @@
 provider "aws" {
   region = "us-east-1"
 }
-
-resource "aws_s3_bucket" "bucket_1" {
-  bucket = "cloudcamp-terraform-jim"
-
-
+ 
+resource "aws_s3_bucket" "bucket" {
+  bucket = "bucket-ivan-2025"
+ 
   tags = {
-    Name        = "cloudcamp-terraform-jim"
-    Environment = "Dev"
-    team        = "cloud"
+    Name        = "cloudcamp-terraform"
+    Environment = "prod"
   }
 }
